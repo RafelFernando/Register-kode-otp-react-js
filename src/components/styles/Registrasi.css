@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.registrasi-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F2F2F2;
+    display: flex;
+    padding: 10px;
+
+}
+
+.registrasi-container .registrasi-container-kanan {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form {
+    width: 80%;
+    height: 90%;
+    margin: 0px auto;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .judul-form-registrasi {
+    color: #193F7A;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 85px;
+}
+
+.registrasi-container .registrasi-container-kanan .deskripsi-registrasi {
+    color: #193F7A;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.kotak-form .input-registrasi {
+    width: 100%;
+    margin-top: 5px;
+    padding:  12px 10px;
+    color: black;
+    border-radius: 15px;
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.kotak-form .input-registrasi::placeholder {
+    color: gray;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.kotak-form span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 1rem;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.button-registrasi {
+    width: 100%;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #193F7A;
+  border: 1px solid #193F7A;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  margin: 10px 0px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .divider::before,
+.registrasi-container .registrasi-container-kanan .kotak-form .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid black;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .divider:not(:empty)::before {
+  margin-right: 0.75em; /* jarak antara garis kiri dan teks */
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .divider:not(:empty)::after {
+  margin-left: 0.75em; /* harusnya margin-left, bukan margin-right */
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+  margin: 10px 0;
+
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi .google {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid #DADCE0;
+  cursor: pointer;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi .google .img-google {
+  width: 20px;
+  height: 20px;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi .google a {
+  text-decoration: none;
+  color: black;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi .apple {
+  background-color: white;
+  flex: 1;
+  gap: 2px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #DADCE0;
+  cursor: pointer;
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi .apple .img-apple {
+  width: 20px;
+  height: 20px;
+
+}
+
+.registrasi-container .registrasi-container-kanan .kotak-form .social-registrasi .apple a {
+  text-decoration: none;
+  color: black;
+}
+
+/* masuk sekarang */
+.masuk {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.masuk p {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.masuk a {
+  color: #193F7A;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.registrasi-container .registrasi-container-kiri {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.registrasi-container .registrasi-container-kiri .kotak-biru {
+    background-color: #193F7A;
+    width: 80%;
+    height: 140%;
+    border-radius: 30px;
+    position: relative; /* Tambahkan ini */
+    overflow: visible;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.registrasi-container .registrasi-container-kiri .kotak-biru h1 {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 40px 40px;
+    letter-spacing: 1px;
+    margin-right: 100px;
+} 
+
+.registrasi-container-kiri .kotak-biru::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand: top:0; right:0; bottom:0; left:0 */
+  background-image: url("../public/imgstp.png");
+  background-size: cover;
+  background-position: center;
+   /* efek blur */
+  z-index: 1;
+  border-radius: 30px;
+}
+
+/* Overlay warna oranye transparan */
+.registrasi-container-kiri .kotak-biru::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #193F7AE5; /* orange + transparan */
+  z-index: 2;
+  opacity: 2;
+  border-radius: 30px;
+}
+
+/* Konten biar di atas overlay */
+.registrasi-container-kiri .kotak-biru > * {
+  position: relative;
+  z-index: 3;
+}
+
+.registrasi-container .registrasi-container-kiri .kotak-biru img {
+    position: absolute;
+  transform: scale(0.75);
+  z-index: 10;
+  right: 30px;
+  left: -180px;
+  bottom: -99px;
+}
+
+.container-phone {
+  position: relative;
+  width: 100%;
+  
+}
+
+.container-phone .country-code {
+  position: absolute;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 1rem;
+  pointer-events: none; 
+  
+}
+
+.container-phone .input-registrasi {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 12px 10px 60px; /* ✅ kasih padding kiri biar gak nutupin +62 */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+

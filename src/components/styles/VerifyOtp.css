@@ -1,0 +1,70 @@
+.verify-container {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 30px 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.verify-container h1 {
+  font-size: 1.8rem;
+  color: #193F7A;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.verify-container p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.otp-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.otp-input {
+  width: 50px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #193F7A;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otp-input:focus {
+  border-color: #D9A91A;
+  box-shadow: 0 0 6px rgba(217, 169, 26, 0.6);
+}
+
+.button-otp {
+  width: 100%;
+  padding: 14px;
+  background: #193F7A;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button-otp:hover {
+  background: #D9A91A;
+  color: #193F7A;
+  transform: translateY(-2px);
+}
+
+.button-otp:active {
+  transform: scale(0.97);
+}

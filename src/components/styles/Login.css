@@ -1,0 +1,259 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Login */
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #193F7A;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+
+.container .container-kanan {
+  background-color: #D9A91A;
+  flex: 1;
+  border-radius: 40px;
+  box-sizing: border-box;
+  position: relative; /* penting biar overlay bisa diposisikan */
+  overflow: hidden;
+}
+
+.container .container-kanan::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand: top:0; right:0; bottom:0; left:0 */
+  background-image: url("../public/imgstp.png");
+  background-size: cover;
+  background-position: center;
+   /* efek blur */
+  z-index: 1;
+}
+
+/* Overlay warna oranye transparan */
+.container .container-kanan::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 165, 0, 0.9); /* orange + transparan */
+  z-index: 2;
+  opacity: 2;
+}
+
+/* Konten biar di atas overlay */
+.container .container-kanan > * {
+  position: relative;
+  z-index: 3;
+}
+
+.container .container-kanan .kotak-gambar-kuning {
+  margin: 30px auto;
+  width: 90%;
+  height: 90%;
+  
+
+}
+
+.container .container-kanan .kotak-gambar-kuning .judul-kotak-kuning {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 110px;
+
+}
+
+.container .container-kanan .kotak-gambar-kuning img {
+  transform: scale(1.7);
+}
+
+.container .container-kiri {
+  flex: 1;
+}
+
+.container .container-kiri .kotak-form {
+  width: 80%;
+  margin: 10px auto;
+  height: 100%;
+}
+
+.container .container-kiri .kotak-form .judul-login {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .container-kiri .kotak-form .deskripsi-login {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.container .container-kiri .kotak-form span {
+  font-size: 1rem;
+  color: white;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .container-kiri .kotak-form input {
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: #193F7A;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;         
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: white;
+  background-color:  #D9A91A;
+  border: 1px solid  #D9A91A;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b09134;
+}
+
+.container .container-kiri .kotak-form .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .container-kiri .kotak-form .divider::before,
+.container .container-kiri .kotak-form .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid white;
+}
+
+.container .container-kiri .kotak-form .divider:not(:empty)::before {
+  margin-right: 0.75em; /* jarak antara garis kiri dan teks */
+}
+
+.container .container-kiri .kotak-form .divider:not(:empty)::after {
+  margin-left: 0.75em; /* harusnya margin-left, bukan margin-right */
+}
+
+.container .container-kiri .kotak-form .social-login {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+
+}
+
+.container .container-kiri .kotak-form .social-login .google {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container .container-kiri .kotak-form .social-login .google .img-google {
+  width: 20px;
+  height: 20px;
+}
+
+.container .container-kiri .kotak-form .social-login .google a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .container-kiri .kotak-form .social-login .apple {
+  background-color: white;
+  flex: 1;
+  gap: 3px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.container .container-kiri .kotak-form .social-login .apple .img-apple {
+  width: 20px;
+  height: 20px;
+
+}
+
+.container .container-kiri .kotak-form .social-login .apple a {
+  text-decoration: none;
+  color: black;
+}
+
+/* daftar sekarang */
+.daftar {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.daftar p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.daftar a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
